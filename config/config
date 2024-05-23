@@ -1,0 +1,124 @@
+{
+    "steam_url": "https://store.steampowered.com/",
+    "epic games_url": "https://store.epicgames.com/en-US/",
+    "container": [
+        {
+            "store": "steam",
+            "name": "game_editions",
+            "selector": "//div[@id='game_area_purchase']/div[contains(@class,'purchase')]",
+            "match": "all",
+            "type": "raw",
+            "method": "xpath"
+        }
+    ],
+    "item": [
+        {
+            "store": "steam",
+            "name": "title",
+            "selector": "appHubAppName",
+            "match": "first",
+            "type": "text",
+            "method": "id",
+            "container": null
+        },
+        {
+            "store": "steam",
+            "name": "popular_tags",
+            "selector": "//div[contains(@class,'popular_tags')]/a",
+            "match": "all",
+            "type": "text",
+            "method": "xpath",
+            "container": null
+        },
+        {
+            "store": "steam",
+            "name": "game_img",
+            "selector": "//div[@id='gameHeaderImageCtn']/img",
+            "match": "first",
+            "type": "raw",
+            "method": "xpath",
+            "container": null
+        },
+        {
+            "store": "steam",
+            "name": "release_date",
+            "selector": "date",
+            "match": "first",
+            "type": "text",
+            "method": "class name",
+            "container": null
+        },
+        {
+            "store": "steam",
+            "name": "game_title",
+            "selector": "h1",
+            "match": "first",
+            "type": "text",
+            "method": "tag name",
+            "container": "game_editions"
+        },
+        {
+            "store": "steam",
+            "name": "game_price",
+            "selector": ".//div[contains(@class,'price')]",
+            "match": "first",
+            "type": "text",
+            "method": "xpath",
+            "container": "game_editions"
+        },
+        {
+            "store": "epic games",
+            "name": "title",
+            "selector": "//h1/span",
+            "match": "first",
+            "type": "text",
+            "method": "xpath",
+            "container": null
+        },
+        {
+            "store": "epic games",
+            "name": "popular_tags",
+            "selector": "//div[@data-testid=\"about-metadata-layout-column\"][1]//li",
+            "match": "all",
+            "type": "text",
+            "method": "xpath",
+            "container": null
+        },
+        {
+            "store": "epic games",
+            "name": "game_img",
+            "selector": "//div[contains(data-testid,picture)]/img",
+            "match": "first",
+            "type": "raw",
+            "method": "xpath",
+            "container": null
+        },
+        {
+            "store": "epic games",
+            "name": "release_date",
+            "selector": "//time[1]",
+            "match": "first",
+            "type": "text",
+            "method": "xpath",
+            "container": null
+        },
+        {
+            "store": "epic games",
+            "name": "game_title",
+            "selector": "//div[@data-testid=\"related-offer-tag-title\"]//h3",
+            "match": "all",
+            "type": "text",
+            "method": "xpath",
+            "container": null
+        },
+        {
+            "store": "epic games",
+            "name": "game_price",
+            "selector": "//span[@class='css-1vkmhw5']",
+            "match": "all",
+            "type": "text",
+            "method": "xpath",
+            "container": null
+        }
+    ]
+}
