@@ -2,6 +2,16 @@
 
 This Python project scrapes game data from multiple online stores, including Steam and Epic Games Store, and outputs the collected data into a CSV file. It aims to provide users with an automated way to gather information about specific games, such as their titles, prices, release dates, and popular tags, from various online platforms.
 
+<br>
+
+<div align="center">
+  <!-- Add badges here -->
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/HossamMohamed12/Game-Store-Data-Scraper">
+  <img alt="GitHub license" src="https://img.shields.io/github/license/HossamMohamed12/Game-Store-Data-Scraper">
+</div>
+
+<br>
+
 ## Table of Contents
 
 - [Introduction](#introduction)
